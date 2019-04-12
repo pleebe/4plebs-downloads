@@ -11,9 +11,9 @@ then
     [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
 else
 urip="https://archive.org/download/4plebs-org-image-dump-20";
-year=18;
+year=19;
 wget -r -l1 -H -nd -N -np -A.tar.gz ${urip}${year}-01;
-for part in {2..9}
+for part in {2..11}
 do
     wget -r -l1 -H -nd -N -np -A.tar.gz ${urip}${year}-01-part${part};
 done
